@@ -1,33 +1,18 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Eileen")
-
-
-# The game starts here.
+﻿#Characters
+define Cal = Character("Calliope", color = "#F00771")
+define Muse = Character("Muse", color = "#5865D6")
+define Harper = Character("Harper", color = "#D6044D")
+define Witch = Character("Witch", color = "#6F00B8")
+define Darrell = Character("Darrell", color = "#D40000")
+define Dragon = Character("Dragon", color = "#D40000")
+define Advisor = Character("Advisor", color = "#029020")
+define Mystery = Character("Mysterious Man", color = "#010054")
+define Bill = Character("Bill", color = "#FF1F00")
+#Extra here im not sure if bill and kidnapper are the same or not
+# K = kidnapper
 
 label start:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
+    $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
+    call SceneOne
+    with fade
     return
