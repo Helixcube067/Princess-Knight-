@@ -1,4 +1,9 @@
-﻿#Characters
+#Variables
+define neutralPoints = 0
+define harperPoints = 0
+define musePoints = 0
+
+#Characters
 define Cal = Character("Calliope", color = "#F00771")
 define Muse = Character("Muse", color = "#5865D6")
 define Harper = Character("Harper", color = "#D6044D")
@@ -8,11 +13,17 @@ define Dragon = Character("Dragon", color = "#D40000")
 define Advisor = Character("Advisor", color = "#029020")
 define Mystery = Character("Mysterious Man", color = "#010054")
 define Bill = Character("Bill", color = "#FF1F00")
+
 #Extra here im not sure if bill and kidnapper are the same or not
-# K = kidnapper
+define Kidnapper = Character("Kidnapper", color = "#FF1F00")
+
+
 
 label start:
+    default menuset = set()
     $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
-    call SceneOne
+    call SceneOne from _call_SceneOne
+    with fade
+    call SceneTwo from _call_SceneTwo
     with fade
     return

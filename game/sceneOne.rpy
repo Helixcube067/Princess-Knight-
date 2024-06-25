@@ -1,8 +1,8 @@
 label SceneOne:
-    "Meeting with your advisors should be classified as a type of torture, in my opinion."
+    "Meeting with your advisors should be classified as a type of torture, in your opinion."
     Advisor "And of course, we need to do something about your… ehem—{w=0.75} outfit, princess Calliope. For the ball."
     "Yeah.{w} Torture."
-    Advisor "A princess you may be, but you certainly aren't a fan of bureaucracy in any form."
+    "A princess you may be, but you certainly aren't a fan of bureaucracy in any form."
     "You know that you have to know this, but that doesn't make it any easier to sit through, especially when the advisors have it out for you"
     "'Too precocious,{w=0.75} too reckless,{w=0.75} too masculine.{w=0.75}' You could repeat him word for word. They're all stuffy and ridiculous, leftovers from your parent's time ruling that they handed over to you"
     "As soon as you're able, you plan to fire them."
@@ -13,7 +13,7 @@ label SceneOne:
     "She's great, really."
     "With how she acts, honestly you'd think she was the princess."
     "She's got more decorum than you do, though that never bothered you, and she dresses like she grabbed all her outfits from your mother's closet as a young adult. People who are coming in from outside the castle often mix up who's supposed to be who."
-    "It's a wonder she hasn't—{nw=0.75}"
+    "It's a wonder she hasn't—{nw=3.25}"
     "CRASH" with sshake
     "There's a scuffle outside the hallway, something quick and muffled."
     "You wouldn't usually worry—{w=0.75} Muse is super duper competent!—{w=0.75} but then she lets out a muffled swear."
@@ -29,7 +29,7 @@ label SceneOne:
     "There is so much wrong with that letter. Starting with the written out addition of 'toodles'."
     "And yeah Muse is lovely, but she's not you! You're a very pretty princess. You're almost insulted."
     "Almost, because the idea of being called lovely by this guy gives you major creeps."
-    "You feel—{w} helpless. You're not used to being on this side of the kidnapping!{w} You're used to being the damsel, not the one waiting patiently for the damsel to be returned safely."
+    "You feel—{w=0.75} helpless. You're not used to being on this side of the kidnapping!{w} You're used to being the damsel, not the one waiting patiently for the damsel to be returned safely."
     "You don't know how your family does it, even if it's basically routine. The idea of Muse being in this stupid guy's clutches makes you itchy and frantic."
     "A realization hits. You can't sit still while Muse is dealing with a creep that's trying to marry her! If she's the princess this time, then you'll just have to be the knight."
     Advisor "Princess Calliope, what are you doing?!"
@@ -40,3 +40,54 @@ label SceneOne:
     "What's a knight without a friend?"
     "You knock heavily at Harper's door. Harper, your best friend since the wet nurse, opens the door, sees the look on your face, and immediately attempts to slam it shut."
     #Cg of Harper in doorway
+    "You're well used to that, so you jam your foot in the door and lean against it."
+    Cal "Harper, my good friend!"
+    #maybe annoyed sprite
+    Harper "What do you want."
+    "Harper has a glare mean enough to kill weeds, but really she's kind of a loser once you get past that."
+    "She can barely stand to even look at horses. She finds them too freaky."
+    "Her wimpiness is part of her charm though, and you're well used to her complete aversion to any and all of your plans."
+    "You're good at completely bulldozing her over until she doesn't even know how she got on a roof with you!"
+    Cal "Muse got kidnapped, so I'm going to go save her!"
+    "Concern takes over Harper's face for a moment."
+    Harper "Muse got kidnapped? Why?"
+    "You wave a hand dismissively."
+    Cal "The kidnapper thought she was me. That's not important! We're going to go save her from him."
+    Harper "What do you mean ‘we’?!"
+    Cal "I mean you and I! C'mon, don't you want to go help Muse?"
+    Harper "That's what the kingdom's actual knights are for! How are we even supposed to help her? We don't know how to fight!"
+    Cal "I know how to fight, and you're my moral support. C'mon, where's your sense of adventure?"
+    Harper "Dead in a hole, and you're the one that killed it."
+    "She's such a jester."
+    #End cg
+    "You grab her hand and begin dragging her towards the armory, ignoring the way she digs her heels in with ease."
+    Harper "Calliope, c'mon, we're going to get ourselves killed!"
+    Cal "With that attitude yeah! Have some confidence. It's all about your mindset."
+    "Harper mumbles something to herself. You dutifully pretend you can't hear how many ancient curses she's hissing at you."
+    "There's a give and take to friendship. You give Harper heart attacks, and ignore when she dabbles in dark magic. It's an exchange!"
+    "The armory is empty at this time of day. No doubt all the knights have been called into a strategy meeting to get Muse back, so you have access to your favorite gear."
+    "Suiting up makes you feel like a proper knight. With a sword in hand, you feel confident in your ability to get Muse back from that creepy kidnapper."
+    #Cg of Calliope doing this
+    "You can't resist a little fanfare, so you raise your sword into the air, doing a little twirl."
+    "You're going to get Muse back. After all, she's…"
+    menu:
+        "The best employee you've ever had!":
+            "Good employees are hard to find these days, and Muse is wonderfully Competent."
+            "She's your friend too, of course, but seriously. Good employees are hard to find these days, and Muse is wonderfully Competent."
+            "You can't just let good people go like that!"
+            "Saving her is just good practice as her future employer!"
+            $ neutralPoints += 1
+            pass
+        "The love of your life, probably!":
+            "It's embarrassing that you've never confessed your crush on her, but how could you? She's just so intimidating and poised!"
+            "Maybe saving her will finally net you enough confidence to confess to her. You can certainly dream."
+            "Maybe she'll even fall into your arms like you've fallen into hers so often. That would be really nice. Especially if her head pressed into your collarbone."
+            "You cough, embarrassed about your thoughts despite yourself."
+            $ musePoints += 1
+            pass
+    "You turn to look at Harper, who's anxiously picking up a little dagger. You don't poke at her to get something bigger, because a dagger might be her best bet since she doesn't know how to hold a sword properly."
+    Harper "Are you sure a weapon is necessary? I don't even know how to use this."
+    Cal "Of course it's necessary! This is a knight's quest, it's going to be full of danger and death!"
+    "Harper goes pale. She shoves her face into her hands and mumbles more dark magic into them."
+    Cal "Onward!"
+    #Scene break
