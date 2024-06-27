@@ -1,7 +1,7 @@
 label SceneOne:
     "Meeting with your advisors should be classified as a type of torture, in your opinion."
     Advisor "And of course, we need to do something about your… ehem—{w=0.75} outfit, princess Calliope. For the ball."
-    "Yeah.{w} Torture."
+    "Yeah.{w=0.75} Torture."
     "A princess you may be, but you certainly aren't a fan of bureaucracy in any form."
     "You know that you have to know this, but that doesn't make it any easier to sit through, especially when the advisors have it out for you"
     "'Too precocious,{w=0.75} too reckless,{w=0.75} too masculine.{w=0.75}' You could repeat him word for word. They're all stuffy and ridiculous, leftovers from your parent's time ruling that they handed over to you"
@@ -25,11 +25,11 @@ label SceneOne:
     "Like hell. Muse is {i}the{/i} best guard you've ever had. You're not going to sit by and let her get killed!"
     "But by the time you get out to the hallway, advisors close behind you, Muse is gone. All that's left of her is a scrap of her dress and a note."
     "The handwriting looks ridiculous."
-    "‘I have taken your very lovely princess! We are to be wed at dawn in three days time, and then I will be king of your kingdom! You're invited to the wedding if you can make it in time. Toodles!’"
+    "'I have taken your very lovely princess! We are to be wed at dawn in three days time, and then I will be king of your kingdom! You're invited to the wedding if you can make it in time. Toodles!'"
     "There is so much wrong with that letter. Starting with the written out addition of 'toodles'."
     "And yeah Muse is lovely, but she's not you! You're a very pretty princess. You're almost insulted."
     "Almost, because the idea of being called lovely by this guy gives you major creeps."
-    "You feel—{w=0.75} helpless. You're not used to being on this side of the kidnapping!{w} You're used to being the damsel, not the one waiting patiently for the damsel to be returned safely."
+    "You feel—{w=0.75} helpless. You're not used to being on this side of the kidnapping!{w=0.75} You're used to being the damsel, not the one waiting patiently for the damsel to be returned safely."
     "You don't know how your family does it, even if it's basically routine. The idea of Muse being in this stupid guy's clutches makes you itchy and frantic."
     "A realization hits. You can't sit still while Muse is dealing with a creep that's trying to marry her! If she's the princess this time, then you'll just have to be the knight."
     Advisor "Princess Calliope, what are you doing?!"
@@ -53,7 +53,7 @@ label SceneOne:
     Harper "Muse got kidnapped? Why?"
     "You wave a hand dismissively."
     Cal "The kidnapper thought she was me. That's not important! We're going to go save her from him."
-    Harper "What do you mean ‘we’?!"
+    Harper "What do you mean 'we'?!"
     Cal "I mean you and I! C'mon, don't you want to go help Muse?"
     Harper "That's what the kingdom's actual knights are for! How are we even supposed to help her? We don't know how to fight!"
     Cal "I know how to fight, and you're my moral support. C'mon, where's your sense of adventure?"
@@ -76,7 +76,6 @@ label SceneOne:
             "She's your friend too, of course, but seriously. Good employees are hard to find these days, and Muse is wonderfully Competent."
             "You can't just let good people go like that!"
             "Saving her is just good practice as her future employer!"
-            $ neutralPoints += 1
             pass
         "The love of your life, probably!":
             "It's embarrassing that you've never confessed your crush on her, but how could you? She's just so intimidating and poised!"

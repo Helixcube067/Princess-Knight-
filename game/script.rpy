@@ -1,5 +1,4 @@
 #Variables
-define neutralPoints = 0
 define harperPoints = 0
 define musePoints = 0
 
@@ -12,12 +11,8 @@ define Darrell = Character("Darrell", color = "#D40000")
 define Dragon = Character("Dragon", color = "#D40000")
 define Advisor = Character("Advisor", color = "#029020")
 define Mystery = Character("Mysterious Man", color = "#010054")
-define Bill = Character("Bill", color = "#FF1F00")
-
-#Extra here im not sure if bill and kidnapper are the same or not
-define Kidnapper = Character("Kidnapper", color = "#FF1F00")
-
-
+define Bill = Character("Bill", color = "#FF1F00") 
+define Kidnapper = Character("Kidnapper", color = "72000E")
 
 label start:
     default menuset = set()
@@ -25,5 +20,9 @@ label start:
     call SceneOne from _call_SceneOne
     with fade
     call SceneTwo from _call_SceneTwo
+    with fade
+    call SceneThree
+    with fade
+    call SceneFour
     with fade
     return
