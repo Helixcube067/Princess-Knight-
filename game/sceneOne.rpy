@@ -1,6 +1,9 @@
 label SceneOne:
+    scene hallway with dissolve
     "Meeting with your advisors should be classified as a type of torture, in your opinion."
     Advisor "And of course, we need to do something about your… ehem—{w=0.75} outfit, princess Calliope. For the ball."
+    #show calliope neu onlayer characters at left with dissolve
+    show calliope mad at left with dissolve
     "Yeah.{w=0.75} Torture."
     "A princess you may be, but you certainly aren't a fan of bureaucracy in any form."
     "You know that you have to know this, but that doesn't make it any easier to sit through, especially when the advisors have it out for you"
@@ -15,14 +18,18 @@ label SceneOne:
     "She's got more decorum than you do, though that never bothered you, and she dresses like she grabbed all her outfits from your mother's closet as a young adult. People who are coming in from outside the castle often mix up who's supposed to be who."
     "It's a wonder she hasn't—{nw=3.25}"
     "CRASH" with sshake
+    show calliope neu at left with dissolve
     "There's a scuffle outside the hallway, something quick and muffled."
     "You wouldn't usually worry—{w=0.75} Muse is super duper competent!—{w=0.75} but then she lets out a muffled swear."
+    #HERE is where you would change the scene im unsure if they want this to be offscreen or on screen so ill ask about it
     Muse "FUCK— LET ME GO!" with sshake
     "Muse {i}never{/i} swears."
     "She thinks it's improper for a lady of her knightlyness to do such a thing. The last time she swore was when you almost fell off the low part of the castle roof."
     "You get up, despite shouts to stay put."
     Advisor "My lady, please stay seated while the danger is dealt with!"
+    show calliope mad at left with dissolve
     "Like hell. Muse is {i}the{/i} best guard you've ever had. You're not going to sit by and let her get killed!"
+    scene other hallway
     "But by the time you get out to the hallway, advisors close behind you, Muse is gone. All that's left of her is a scrap of her dress and a note."
     "The handwriting looks ridiculous."
     "'I have taken your very lovely princess! We are to be wed at dawn in three days time, and then I will be king of your kingdom! You're invited to the wedding if you can make it in time. Toodles!'"

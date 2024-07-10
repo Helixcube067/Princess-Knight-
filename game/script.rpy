@@ -2,7 +2,7 @@
 define harperPoints = 0
 define musePoints = 0
 
-#Characters
+#region Characters
 define Cal = Character("Calliope", color = "#F00771")
 define Muse = Character("Muse", color = "#5865D6")
 define Harper = Character("Harper", color = "#D6044D")
@@ -13,6 +13,8 @@ define Advisor = Character("Advisor", color = "#029020")
 define Mystery = Character("Mysterious Man", color = "#010054")
 define Bill = Character("Bill", color = "#FF1F00") 
 define Kidnapper = Character("Kidnapper", color = "72000E")
+#endregion
+
 
 label start:
     default menuset = set()
@@ -21,8 +23,8 @@ label start:
     with fade
     call SceneTwo from _call_SceneTwo
     with fade
-    call SceneThree
+    call SceneThree from _call_SceneThree
     with fade
-    call SceneFour
+    call SceneFour from _call_SceneFour
     with fade
     return
