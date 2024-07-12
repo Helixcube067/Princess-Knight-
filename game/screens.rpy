@@ -279,7 +279,6 @@ style quick_button:
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
 
-
 ################################################################################
 ## Main and Game Menu Screens
 ################################################################################
@@ -302,6 +301,7 @@ screen navigation():
         if main_menu:
 
             textbutton _("Start") action Start()
+            textbutton _("Chapter Select") action Start("chapterSelection")
 
         else:
 

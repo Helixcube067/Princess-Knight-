@@ -1,21 +1,38 @@
 label SceneThree:
+    transform bounce:
+        pause .15
+        yoffset 0
+        easein .175 yoffset -10
+        easeout .175 yoffset 0
+        easein .175 yoffset -4
+        easeout .175 yoffset 0
+        yoffset 0
+    $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
+    scene forest day with fade
     "Day one of traveling does nothing except make the both of you tired and achey, and day two is looking to be the same."
     "You're bolstered, though, by the thought of finally getting to see Muse again. You're used to her being by your side constantly. The absence of her has begun to grate on you."
     "Sometimes you'll turn around to tell a joke, only to double take when it's Harper behind you instead of her."
     "Not that you don't appreciate Harper as a friend!{w=0.75} You do.{w=0.75}  You love her enough to fuel a universe. But Muse is part of your life now, and you miss her."
     "Harper groans again as you both get up from your self imposed five minute break."
+    show harper frown at right with dissolve
     Harper "Must we go right away? He's obviously not going to kill her."
+    show calliope mad at left with dissolve
     Cal "We absolutely must! I got shivers just from watching that creep for five seconds. Imagine how gross Muse feels right now being stuck with him for days on end?"
     "She thinks for a second, then shudders."
+    show harper side at right with dissolve
     Harper "Fair point."
     "Suddenly, before either of you can blink, you're surrounded on all sides by men in theater masks. They point swords at you."
     Mystery "Halt! You're being robbed! Please comply or you'll get hurt!" with sshake
     "All you can think is that maybe you really should've brought along someone with actual fighting prowess."
     "You know how to fight, but that's mostly just what Muse taught you. You're not an expert by any means."
+    show calliope neu at left
+    show harper frown at right
     Cal "Aw nuts."
     Mystery "Drop all of your belongings, then step away carefully—{w=0.75} Princess Calliope?"
     "A murmur spreads through the crowd of bandits, before the leader rips off his theater mask, exposing—"
     Cal "Bill!"
+    show bill at center with dissolve
+    show calliope happy at bounce, left
     "You're delighted by this turn of events. Bill is one of your many Designated Kidnappers, a role created by necessity during your mother's reign as queen."
     "A Designated Kidnapper is assigned to a princess, who will then kidnap her and make the appropriate threats in appropriate disguises."
     "He is then beat up tastefully to show the strength of the kingdom."
@@ -34,10 +51,13 @@ label SceneThree:
     "Bill seems to have come to a decision. He gestures sharply to his band of men, and they disperse in a line down the road."
     Bill "We'll help you. We can't spare much time, but one day is nothing to help you out."
     "You spin him into a hug, before darting off in the direction his men were directed to go."
+    scene forest night with fade
     "Camp that night is much more lively than the last two nights. Instead of being just you and Harper, it's like a big get together with all of your extended family."
     "You see faces you haven't seen in years, and give out more hugs than you have in months."
     "Eventually Bill sits on a log next to you."
+    show bill at right with dissolve
     Bill "How you holdin' up, Princess?"
+    show calliope happy at left with dissolve
     Cal "As well as you can expect. I'm not really built for travel. I like it, though!"
     Bill "Yeah, I bet you never usually get to wander around like this. Your parents are a teeny bit overbearing. But nature's beautiful, ain't it?"
     "A squirrel falls out of a tree and onto one of the thieves' heads."
@@ -52,15 +72,19 @@ label SceneThree:
             "Bill gets up and does a few silly looking moves with a twig he picked up off the ground. You laugh at him, and he bows."
             pass
         "Hopefully…":
+            show calliope vhappy at left with dissolve
             "You really do want to impress her. She does so much for you all the time, is so poised and proper, and you honestly just want to sweep her off her feet."
             "Bill pats your shoulder."
             Bill "I figured it was that. Make sure to really show your stuff, Princess. You'll be sure to knock her off her feet and straight into your arms!"
             pass
     "Bill leaves to go to his own sleeping roll."
+    hide bill with dissolve
     "Before you can go to sleep, Harper walks up to you and sits down."
+    show harper happy at right with dissolve
     "She knocks her shoulder into yours."
     Harper "You holding up?"
     "You don't have to put up a brave face around Harper the way you have to around Bill, so you answer honestly."
+    show calliope neu at left
     Cal "Not really. I've been keeping up with acting like everything's fine, but I'm worried for her. She may be a seasoned knight, but she's not the one who's used to being kidnapped."
     Cal "I just want her to be okay."
     Harper "She'll be okay. She's the strongest person in both of our lives, honestly."
@@ -87,6 +111,7 @@ label SceneThree:
             pass
         "You grab her hand." if musePoints <= 0:
             Cal "You're good to me, Harper."
+            show harper blush at right with dissolve
             "She goes red, though you don't know why."
             Harper "I'm just being a good friend. That's all."
             "She averts her eyes."
@@ -96,5 +121,8 @@ label SceneThree:
             "You cheerfully ignore how hard you're repressing your feelings."
             Harper "Anyway, try to get some sleep. You'll be no use tomorrow if you aren't rested."
             "She gets up and leaves."
+            hide harper with dissolve
             $ harperPoints += 1
             pass
+    jump SceneFour
+    with fade

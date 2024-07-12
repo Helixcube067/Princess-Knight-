@@ -1,4 +1,13 @@
 label SceneOne:
+    transform bounce:
+        pause .15
+        yoffset 0
+        easein .175 yoffset -10
+        easeout .175 yoffset 0
+        easein .175 yoffset -4
+        easeout .175 yoffset 0
+        yoffset 0
+    $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
     scene hallway with dissolve
     "Meeting with your advisors should be classified as a type of torture, in your opinion."
     Advisor "And of course, we need to do something about your… ehem—{w=0.75} outfit, princess Calliope. For the ball."
@@ -29,7 +38,7 @@ label SceneOne:
     Advisor "My lady, please stay seated while the danger is dealt with!"
     show calliope mad at left with dissolve
     "Like hell. Muse is {i}the{/i} best guard you've ever had. You're not going to sit by and let her get killed!"
-    scene other hallway
+    scene other hallway with dissolve
     "But by the time you get out to the hallway, advisors close behind you, Muse is gone. All that's left of her is a scrap of her dress and a note."
     "The handwriting looks ridiculous."
     "'I have taken your very lovely princess! We are to be wed at dawn in three days time, and then I will be king of your kingdom! You're invited to the wedding if you can make it in time. Toodles!'"
@@ -41,15 +50,16 @@ label SceneOne:
     "A realization hits. You can't sit still while Muse is dealing with a creep that's trying to marry her! If she's the princess this time, then you'll just have to be the knight."
     Advisor "Princess Calliope, what are you doing?!"
     "You run past him with a grin."
-    #expression i think
+    show calliope determined at left with dissolve
     Cal "I'm going to save my knight!"
     "He sputters out denials, but you ignore him with the ease of lots of practice. You almost head straight for the armory, but pivot midway."
     "What's a knight without a friend?"
+    scene other hallway with dissolve
+    show calliope determined at left with dissolve
     "You knock heavily at Harper's door. Harper, your best friend since the wet nurse, opens the door, sees the look on your face, and immediately attempts to slam it shut."
-    #Cg of Harper in doorway
     "You're well used to that, so you jam your foot in the door and lean against it."
     Cal "Harper, my good friend!"
-    #maybe annoyed sprite
+    show harper side at right with dissolve
     Harper "What do you want."
     "Harper has a glare mean enough to kill weeds, but really she's kind of a loser once you get past that."
     "She can barely stand to even look at horses. She finds them too freaky."
@@ -60,14 +70,17 @@ label SceneOne:
     Harper "Muse got kidnapped? Why?"
     "You wave a hand dismissively."
     Cal "The kidnapper thought she was me. That's not important! We're going to go save her from him."
+    show harper frown at right with dissolve
     Harper "What do you mean 'we'?!"
     Cal "I mean you and I! C'mon, don't you want to go help Muse?"
     Harper "That's what the kingdom's actual knights are for! How are we even supposed to help her? We don't know how to fight!"
     Cal "I know how to fight, and you're my moral support. C'mon, where's your sense of adventure?"
     Harper "Dead in a hole, and you're the one that killed it."
     "She's such a jester."
-    #End cg
+    scene hallway with dissolve
+    show calliope determined at left with dissolve
     "You grab her hand and begin dragging her towards the armory, ignoring the way she digs her heels in with ease."
+    show harper frown at right with dissolve
     Harper "Calliope, c'mon, we're going to get ourselves killed!"
     Cal "With that attitude yeah! Have some confidence. It's all about your mindset."
     "Harper mumbles something to herself. You dutifully pretend you can't hear how many ancient curses she's hissing at you."
@@ -79,12 +92,14 @@ label SceneOne:
     "You're going to get Muse back. After all, she's…"
     menu:
         "The best employee you've ever had!":
+            show calliope happy at bounce, left with dissolve
             "Good employees are hard to find these days, and Muse is wonderfully Competent."
             "She's your friend too, of course, but seriously. Good employees are hard to find these days, and Muse is wonderfully Competent."
             "You can't just let good people go like that!"
             "Saving her is just good practice as her future employer!"
             pass
         "The love of your life, probably!":
+            show calliope vhappy at bounce, left with dissolve
             "It's embarrassing that you've never confessed your crush on her, but how could you? She's just so intimidating and poised!"
             "Maybe saving her will finally net you enough confidence to confess to her. You can certainly dream."
             "Maybe she'll even fall into your arms like you've fallen into hers so often. That would be really nice. Especially if her head pressed into your collarbone."
@@ -96,4 +111,5 @@ label SceneOne:
     Cal "Of course it's necessary! This is a knight's quest, it's going to be full of danger and death!"
     "Harper goes pale. She shoves her face into her hands and mumbles more dark magic into them."
     Cal "Onward!"
-    #Scene break
+    jump SceneTwo 
+    with fade

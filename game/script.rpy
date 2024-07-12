@@ -15,16 +15,14 @@ define Bill = Character("Bill", color = "#FF1F00")
 define Kidnapper = Character("Kidnapper", color = "72000E")
 #endregion
 
-
 label start:
-    default menuset = set()
-    $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
     call SceneOne from _call_SceneOne
     with fade
-    call SceneTwo from _call_SceneTwo
-    with fade
-    call SceneThree from _call_SceneThree
-    with fade
-    call SceneFour from _call_SceneFour
-    with fade
+    label specialThanks:
+        scene black
+        "And thanks all! Thanks for reading everybody!"
+        "Dev note: Going to add hyperlinks here for credit"
+        "Here's a link to our lovely artist: {a=https://dorianmack.carrd.co/}Dorian's portfolio{/a}. Please check them out!"
+        "Our lovely musician is Luke \“lessashamed\” Williams"
+        "And I'm helix I'm the programmer! You can check me out here: "
     return
