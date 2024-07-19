@@ -116,4 +116,3 @@ label SceneFour:
             "She nods mutely."
             "You run off to untie Muse with a grin still on your face."
     stop music fadeout 3.0
-    jump specialThanks
