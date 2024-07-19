@@ -8,6 +8,7 @@ label SceneTwo:
         easeout .175 yoffset 0
         yoffset 0
     $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
+    play music "audio/music/Princess Knight Main Theme.mp3" fadein 3.0 if_changed
     scene forest day with dissolve
     Cal "We need to find a witch first, obviously."
     show harper side at right with dissolve

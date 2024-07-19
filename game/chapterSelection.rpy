@@ -1,4 +1,7 @@
 label chapterSelection:
+    play music "audio/music/Princess Knight Main Theme.mp3" fadein 3.0 if_changed
+    image chSelect =  "gui/game_menu.png"
+    scene chSelect
     menu:
         "Chapter 1":
             jump SceneOne

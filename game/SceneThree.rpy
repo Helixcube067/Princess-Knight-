@@ -8,6 +8,7 @@ label SceneThree:
         easeout .175 yoffset 0
         yoffset 0
     $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
+    play music "audio/music/Princess Knight Main Theme.mp3" fadein 3.0 if_changed
     scene forest day with fade
     "Day one of traveling does nothing except make the both of you tired and achey, and day two is looking to be the same."
     "You're bolstered, though, by the thought of finally getting to see Muse again. You're used to her being by your side constantly. The absence of her has begun to grate on you."
@@ -22,6 +23,7 @@ label SceneThree:
     show harper side at right with dissolve
     Harper "Fair point."
     "Suddenly, before either of you can blink, you're surrounded on all sides by men in theater masks. They point swords at you."
+    stop music fadeout 3.0
     Mystery "Halt! You're being robbed! Please comply or you'll get hurt!" with sshake
     "All you can think is that maybe you really should've brought along someone with actual fighting prowess."
     "You know how to fight, but that's mostly just what Muse taught you. You're not an expert by any means."
@@ -31,6 +33,7 @@ label SceneThree:
     Mystery "Drop all of your belongings, then step away carefully—{w=0.75} Princess Calliope?"
     "A murmur spreads through the crowd of bandits, before the leader rips off his theater mask, exposing—"
     Cal "Bill!"
+    play music "audio/music/Princess Knight Main Theme.mp3" fadein 3.0 if_changed
     show bill at center with dissolve
     show calliope happy at bounce, left
     "You're delighted by this turn of events. Bill is one of your many Designated Kidnappers, a role created by necessity during your mother's reign as queen."
@@ -51,6 +54,8 @@ label SceneThree:
     "Bill seems to have come to a decision. He gestures sharply to his band of men, and they disperse in a line down the road."
     Bill "We'll help you. We can't spare much time, but one day is nothing to help you out."
     "You spin him into a hug, before darting off in the direction his men were directed to go."
+    stop music fadeout 3.0
+    play music "audio/music/Fireside Heart to Heart.mp3" fadein 3.0
     scene forest night with fade
     "Camp that night is much more lively than the last two nights. Instead of being just you and Harper, it's like a big get together with all of your extended family."
     "You see faces you haven't seen in years, and give out more hugs than you have in months."
@@ -125,4 +130,5 @@ label SceneThree:
             $ harperPoints += 1
             pass
     jump SceneFour
+    stop music fadeout 3.0
     with fade

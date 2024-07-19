@@ -24,5 +24,5 @@ label start:
         "Dev note: Going to add hyperlinks here for credit"
         "Here's a link to our lovely artist: {a=https://dorianmack.carrd.co/}Dorian's portfolio{/a}. Please check them out!"
         "Our lovely musician is Luke \“lessashamed\” Williams"
-        "And I'm helix I'm the programmer! You can check me out here: "
+        "And I'm helix I'm the programmer! You can check me out {a=https://helixcube.itch.io}here{/a} "
     return

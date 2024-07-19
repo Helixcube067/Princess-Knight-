@@ -8,6 +8,7 @@ label SceneOne:
         easeout .175 yoffset 0
         yoffset 0
     $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
+    play music "audio/music/Princess Knight Main Theme.mp3" fadein 3.0 if_changed
     scene hallway with dissolve
     "Meeting with your advisors should be classified as a type of torture, in your opinion."
     Advisor "And of course, we need to do something about your… ehem—{w=0.75} outfit, princess Calliope. For the ball."

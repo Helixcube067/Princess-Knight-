@@ -8,6 +8,7 @@ label SceneFour:
         easeout .175 yoffset 0
         yoffset 0
     $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
+    play music "audio/music/Princess Knight Main Theme.mp3" fadein 3.0 if_changed
     scene forest day with fade
     "The next day dawns bright and early. You all pack up with minimal complaints, though Harper exudes enough negative energy to make those around her cower away."
     "You're jittery with nervous energy, and would vibrate out of your own clothes if not for the steadying hand Harper keeps on your back."
@@ -114,4 +115,5 @@ label SceneFour:
             Cal "Now's not the time, but later we'll talk, okay?"
             "She nods mutely."
             "You run off to untie Muse with a grin still on your face."
+    stop music fadeout 3.0
     jump specialThanks
